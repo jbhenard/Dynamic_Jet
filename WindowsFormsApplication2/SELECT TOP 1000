@@ -1,0 +1,7 @@
+SELECT TOP 1000 
+	   B.*
+  FROM [Dynamic_Jet].[dbo].[Absence] A, [Dynamic_Jet].[dbo].[Employe] B
+  WHERE A.date_debut >= '2001-01-01' and A.date_debut <= '2016-01-02'
+  AND A.id_employe = B.numero_secu
+
+  /*WHERE date_debut >= '2016-05-25' and date_debut <= '2016-05-26' */

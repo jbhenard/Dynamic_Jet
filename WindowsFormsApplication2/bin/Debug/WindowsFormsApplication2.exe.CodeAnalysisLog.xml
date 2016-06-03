@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe">
+   <Modules>
+    <Module Name="windowsformsapplication2.exe">
+     <Namespaces>
+      <Namespace Name="Base_Dynamic_Jet">
+       <Types>
+        <Type Name="Absence" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implémenter IDisposable sur 'Absence' car il crée des membres des types IDisposable suivants : 'SqlConnection', 'SqlCommand', 'SqlDataAdapter', 'DataSet', 'DataTable'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Afficher1(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="555">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Absence.Afficher1(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AfficherTous(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="571">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Absence.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="579">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Absence.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="592">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Absence.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="605">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Absence.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Client" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implémenter IDisposable sur 'Client' car il crée des membres des types IDisposable suivants : 'SqlConnection', 'SqlCommand', 'SqlDataAdapter', 'DataSet', 'DataTable'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Afficher1(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="143">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Client.Afficher1(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AfficherTous(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="160">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Client.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="168">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Client.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="181">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Client.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="194">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Client.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Employé" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implémenter IDisposable sur 'Employé' car il crée des membres des types IDisposable suivants : 'SqlConnection', 'SqlCommand', 'SqlDataAdapter', 'DataSet', 'DataTable'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Afficher1(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="352">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Employé.Afficher1(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AfficherTous(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="368">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Employé.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="376">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Employé.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="389">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Employé.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="402">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Employé.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Equipement" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implémenter IDisposable sur 'Equipement' car il crée des membres des types IDisposable suivants : 'SqlConnection', 'SqlCommand', 'SqlDataAdapter', 'DataSet', 'DataTable'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Afficher1(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="758">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Equipement.Afficher1(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AfficherTous(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="773">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Equipement.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="781">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Equipement.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="794">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Equipement.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="807">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Equipement.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Reservation" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implémenter IDisposable sur 'Reservation' car il crée des membres des types IDisposable suivants : 'SqlConnection', 'SqlCommand', 'SqlDataAdapter', 'DataSet', 'DataTable'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Afficher1(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="992">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Reservation.Afficher1(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AfficherTous(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-05-26 14:13:08Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="1012">La chaîne de requête passée en 'SqlCommand.CommandText.set(string)' dans 'Reservation.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="1020">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Reservation.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="1033">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Reservation.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\dl2015\Documents\Visual Studio 2015\Projects\Dynamic-Jet\WindowsFormsApplication2" File="Dynamic_Jet.cs" Line="1046">La chaîne de requête passée en 'SqlCommand.SqlCommand(string, SqlConnection)' dans 'Reservation.AfficherTous(string)' n'a pas pu contenir les variables 'requeteL' suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="WindowsFormsApplication2.Properties">
+       <Types>
+        <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2016-05-26 14:13:08Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Évitez le recours à du code privé non appelé</Name>
+   <Description>Il existe du code non appelé qui n'est pas visible de l'extérieur et ne constitue pas un point d'entrée connu du runtime. Si cette violation provoque une erreur, signalez le problème à l'équipe Visual Studio Code Analysis.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Les types qui possèdent des champs supprimables doivent être supprimables</Name>
+   <Description>Les types qui déclarent des membres supprimables doivent également implémenter IDisposable. Si le type ne possède aucune ressource non managée, n'implémentez pas de finaliseur sur celui-ci.</Description>
+   <Resolution Name="NonBreaking">Implémenter IDisposable sur {0} car il crée des membres des types IDisposable suivants : {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Vérifier si les requêtes SQL présentent des failles de sécurité" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Vérifier si les requêtes SQL présentent des failles de sécurité</Name>
+   <Description>Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. Microsoft SQL Server ainsi que d'autres serveurs de base de données prennent en charge les procédures stockées et les requêtes SQL paramétrables, qui réduisent les risques de telles attaques.</Description>
+   <Resolution Name="WithNonLiterals">La chaîne de requête passée en {0} dans {1} n'a pas pu contenir les variables {2} suivantes. Si ces variables proviennent d'entrées d'utilisateur, utilisez une procédure stockée ou une requête SQL paramétrable au lieu de générer la requête à l'aide de concaténations de chaîne.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Catégorie</String>
+  <String Key="Certainty">Certitude</String>
+  <String Key="CollapseAll">Réduire tout</String>
+  <String Key="CheckId">ID de contrôle</String>
+  <String Key="Error">Erreur</String>
+  <String Key="Errors">erreur(s)</String>
+  <String Key="ExpandAll">Développer tout</String>
+  <String Key="Help">Aide</String>
+  <String Key="Line">Ligne</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Emplacement non stocké dans le fichier Pdb]</String>
+  <String Key="Project">Projet</String>
+  <String Key="Resolution">Résolution</String>
+  <String Key="Rule">Règle</String>
+  <String Key="RuleFile">Fichier de règles</String>
+  <String Key="RuleDescription">Description de la règle</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">État</String>
+  <String Key="Target">Cible</String>
+  <String Key="Warning">Avertissement</String>
+  <String Key="Warnings">avertissement(s)</String>
+  <String Key="ReportTitle">Rapport d'analyse du code</String>
+ </Localized>
+</FxCopReport>
